@@ -83,7 +83,7 @@ public:
 
 
 
-		while (remaning1.size() != 1 || remaning2.size() != 1) {
+		while (remaning1.size() != 0 || remaning2.size() != 0) {
 
 			if (c == 0) {
 				// PLAYER 1 CHANCE
@@ -269,6 +269,9 @@ public:
 			}
 			cout << endl;
 		}
+
+		if (remaning1.size() == 0) cout << "Player-2 is Winner" << endl;
+		else cout << "Player-1 is Winner" << endl;
 	}
 
 
